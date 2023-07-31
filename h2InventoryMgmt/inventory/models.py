@@ -44,7 +44,7 @@ class WarmFood(models.Model):
     def __str__(self):
         return self.name
 
-class Sundrie(models.Model):
+class Sundry(models.Model):
     name = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)
     quantity = models.PositiveIntegerField(default=0)
