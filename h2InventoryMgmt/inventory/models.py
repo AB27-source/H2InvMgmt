@@ -11,17 +11,7 @@ class Beverages(models.Model):
     def __str__(self):
         return self.name
 
-class SnackOnTheGo(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-    # created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.name
-
 class Candy(models.Model):
-    snack_on_the_go = models.ForeignKey(SnackOnTheGo, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)
     quantity = models.PositiveIntegerField(default=0)
@@ -33,7 +23,6 @@ class Candy(models.Model):
         return self.name
 
 class Snacks(models.Model):
-    snack_on_the_go = models.ForeignKey(SnackOnTheGo, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     description = models.TextField()
     quantity = models.PositiveIntegerField(default=0)
