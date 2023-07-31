@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Beverages, Candy, Snacks, WarmFood, Sundries, FrozenItems
+from .models import Beverage, Candy, Snack, WarmFood, Sundrie, FrozenItem
 # Register your models here.
-admin.site.register(Beverages)
+admin.site.register(Beverage)
 admin.site.register(Candy)
-admin.site.register(Snacks)
+admin.site.register(Snack)
 admin.site.register(WarmFood)
-admin.site.register(Sundries)
-admin.site.register(FrozenItems)
+admin.site.register(Sundrie)
+admin.site.register(FrozenItem)
