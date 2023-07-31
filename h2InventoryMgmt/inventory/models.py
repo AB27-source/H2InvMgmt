@@ -24,7 +24,7 @@ class Candy(models.Model):
 
 class Snacks(models.Model):
     name = models.CharField(max_length=100)
-    brand = models.CharField(max_lenth=100)
+    brand = models.CharField(max_length=100)
     quantity = models.PositiveIntegerField(default=0)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     is_available = models.BooleanField(default=True)
