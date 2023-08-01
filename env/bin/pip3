@@ -1,4 +1,4 @@
-#!/Users/angad/Desktop/Work/Home2InventoryManagement/env/bin/python3
+#!/Users/angad/Desktop/Work/H2InvMgmt/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

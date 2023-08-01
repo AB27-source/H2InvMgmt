@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "dracula-ui": "^1.0.6"
+  }
+}
